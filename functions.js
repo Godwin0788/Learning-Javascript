@@ -4,7 +4,7 @@ function myName() {
 myName()
 
 function myMother() {
-    console.log ("My mother is walking")
+    return "My mother is walking"
 }
 myMother()
 function myMic(y1,y2) {
@@ -37,3 +37,43 @@ function convertCelsiusFahrenheit(celsius){
 }
 convertCelsiusFahrenheit(2)
 convertCelsiusFahrenheit(37)
+
+// return function
+function myPlace(){
+    return "my place entebbe"
+}
+myPlace()
+console.log(myPlace())
+
+let x=myPlace()
+console.log(x)
+
+let w=myMother()
+console.log(w)
+
+function homeAlone(){
+    return "am home alone"
+}
+homeAlone()
+console.log(homeAlone())
+
+function exam(){
+    return "we are doing an exam"
+}
+exam()
+console.log(exam())
+
+// creating Java Script Objects
+
+let glass={type:"water", make:"spring", color:"opeq"}
+let computer={type:"laptop", make:"hp", processor:"i7"}
+let television={type:"smart", make:"lg", ram:"8gb"}
+
+// creating n empty javascript object 
+let animal={}
+
+animal.fname="scobby";
+animal.color="brown";
+animal.barks="no";
+animal.type="pet";
+console.log(animal)
