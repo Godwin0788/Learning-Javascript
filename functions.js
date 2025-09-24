@@ -38,7 +38,7 @@ function convertCelsiusFahrenheit(celsius){
 convertCelsiusFahrenheit(2)
 convertCelsiusFahrenheit(37)
 
-// return function
+// creating a return function
 function myPlace(){
     return "my place entebbe"
 }
@@ -69,11 +69,43 @@ let glass={type:"water", make:"spring", color:"opeq"}
 let computer={type:"laptop", make:"hp", processor:"i7"}
 let television={type:"smart", make:"lg", ram:"8gb"}
 
-// creating n empty javascript object 
-let animal={}
+// creating an empty javascript object 
+let animal={};
 
 animal.fname="scobby";
 animal.color="brown";
 animal.barks="no";
 animal.type="pet";
 console.log(animal)
+
+// creatin a javascript object using a new object()
+var person= new Object();
+person.fname="peter";
+person.color="white";
+person.height="6.2";
+person.weight="90";
+console.log(person)
+
+// javascript object methods
+const employee={
+    firstName:"Mark",
+    lastName:"Paul",
+    id: 3456,
+    fullName: function(){
+        return this.firstName +" "+ this.lastName;
+    }
+};
+console.log(employee.fullName())
+
+// javascript objects mutable
+const donkey = {
+  firstName: "eric",
+  lastName: "kit",
+  age:5,
+  Color: "black"
+};
+const q=donkey
+console.log(q)
+q.age=3
+console.log(q)
+

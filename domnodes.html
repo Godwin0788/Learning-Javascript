@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Creating New HTML Elements (Nodes) -->
+    <div id="div1">
+        <p id="p1">Uganda pearl of africa</p>
+        <p id="p2">driving everyday</p>
+    </div>
+
+    <!-- Creating new HTML Elements - insertBefore() -->
+     <!-- If you don't want appendChild() you can use the insertBefore() method: -->
+
+     <div id="div2">
+        <p id="p3"> running like bolt</p>
+        <p id="p4">crazy like baby</p>
+
+     </div>
+     <button onclick="myFunction()">remove element</button>
+    
+
+    <script>
+        // This code creates a new <p> element:
+        const para = document.createElement("p");
+        // To add text to the <p> element, you must create a text node first. This code creates a text node:
+        const node = document.createTextNode("visit uganda");
+        //    Then you must append the text node to the <p> element:
+        para.appendChild(node)
+
+        //    This code finds an existing element:
+        const newline = document.getElementById("div1");
+        // This code appends the new element to the existing element:
+        newline.appendChild(para)
+
+        const line =document.createElement("p");
+        const another =document.createTextNode("we like our mother land");
+        line.appendChild(node);
+
+        const overline = document.getElementById("div2");
+        const child= document.getElementById("p3");
+        overline.insertBefore(line, child);
+
+        // Removing Existing HTML Elements
+        function myFunction(){
+            document.getElementById("p3"). remove()
+        }
+        // Remove Child Element
+        overline.removeChild(child)
+
+    </script>
+</body>
+
+</html>

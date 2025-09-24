@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- The HTMLCollection Object -->
+     <!-- here we use The getElementsByTagName() method returns an HTMLCollection object.
+      An HTMLCollection object is an array-like list (collection) of HTML elements. -->
+
+      <p>my Country</p>
+      <p>uganda</p>
+      <p id="sentence"></p>
+      <p id="para"></p>
+
+      <script>
+        const myCollection = document.getElementsByTagName("p")
+        document.getElementById("sentence").innerHTML = "i love " + myCollection[1].innerHTML
+
+        // HTML HTMLCollection Length
+        const myparagraph = document.getElementsByTagName("p")
+        document.getElementById("para"). innerHTML = " this doc has " + myparagraph.length + " paragraphs"
+      </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="animations.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="crane"></div>
+    </div>
+    <button onclick="move()">click here</button>
+    <script>
+        function move(){
+            let id = null;
+            const y = document.getElementById("crane");
+            let x = 0;
+            clearInterval(id);
+            id = setInterval(frame, 6);
+            function frame(){
+                if (x==260){clearInterval(id);} else{
+                    x++;
+                    y.style.top = x + "px";
+                    y.style.buttom = x + "px";
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>

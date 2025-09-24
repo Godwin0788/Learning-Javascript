@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="Uganda">Uganda the pearl of Africa</p>
+    <p id="movie">Crossroads</p>
+
+    <div id="eastafrica">
+        <p>kenya</p>
+        <p>Uganda</p>
+        <p>Rwanda</p>
+        <p>Tanzania</p>
+    </div>
+    <p id="lion">king of the jungle</p>
+    <h1 id="king">the lion king</h1>
+
+
+    <script>
+       myTitle= document.getElementById("Uganda").innerHTML;
+       console.log(myTitle)
+
+       myMovie=document.getElementById("movie").firstChild.nodeValue;
+       console.log(myMovie)
+
+       myCountry=document.getElementById("eastafrica").childNodes[0].nodeValue;
+       console.log(myCountry)
+
+       myLion=document.getElementById("lion").nodeName;
+       console.log(myLion)
+
+       myKing=document.getElementById("king").nodeName;
+       console.log(myKing)
+    </script>
+</body>
+
+</html>

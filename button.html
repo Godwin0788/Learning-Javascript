@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .back {
+            height: 50px;
+            width: 50px;
+            background-color: blue;
+        }
+
+        .front {
+            width: 50px;
+            height: 50px;
+            background-color: black;
+        }
+
+        .push {
+            width: 50px;
+            height: 50px;
+            background-color: blueviolet;
+        }
+
+        .step {
+            width: 50px;
+            height: 50px;
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="ani"> dogs</h1>
+    <h2 id="eat">dogs eat bones</h2>
+    <p id="bark">the dogs bark at night</p>
+    <p id="theif">the dogs catch the theif</p>
+    <button onclick="changename()">click here</button>
+
+    <p class="animalia">animals</p>
+    <p class="animalia">reptiles</p>
+    <button onclick="changetag()">visit</button>
+
+    <div id="bac" class="back">
+
+    </div>
+
+    <div id="fro" class="front">
+
+    </div>
+
+    <div id="pus" class="push">
+
+    </div>
+
+    <div id="ste" class="step">
+
+    </div>
+    <button onclick="changecolor()">apply now</button>
+    <p id="change"></p>
+    <script>
+
+        function changecolor() {
+            document.getElementById("bac").style.backgroundColor = "black"
+            setTimeout(() => {
+                document.getElementById("fro").style.backgroundColor = "green"
+            }, 2000);
+            setTimeout(() => {
+                document.getElementById("pus").style.backgroundColor = "white"
+            }, 4000);
+            setTimeout(() => {
+                document.getElementById("ste").style.backgroundColor = "orange"
+            }, 6000);
+        }
+        // Finding HTML Elements using document.getElementsByTagName(name)
+        function changename(){
+           let x= document.getElementsByTagName("p")[1].innerHTML
+           alert(x)
+        }
+
+        //  // Finding HTML Elements using document.getElementsByClassName(name)
+        function changetag(){
+            let y=document.getElementsByClassName("animalia")[0].innerHTML
+            alert(y)
+        }
+
+    </script>
+</body>
+
+</html>

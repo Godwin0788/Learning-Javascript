@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- The HTML DOM NodeList Object -->
+     <p>east african</p>
+     <p>countries</p>
+     <p id="country"></p>
+     <p>click the button to change color of the p element</p>
+     <button onclick="mycolor()">try now</button>
+
+     <script>
+        const mylist = document.querySelectorAll("p");
+        document.getElementById("country").innerHTML = "the second paragraph is " + mylist[1].innerHTML
+
+        function mycolor(){
+            const myname =document.querySelectorAll("p");
+            for (let i = 0, i < myname.length; i++){
+                myname[i].style.color="blue";
+            }
+        }
+
+     </script>
+</body>
+</html>

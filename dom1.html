@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.bass{
+    width: 50px;
+    height: 50px;
+    background-color: brown;
+}
+    </style>
+    
+</head>
+<body>
+    <!-- you can use id to change the words -->
+    <h1 id="lion"> the month of september</h1>
+    <p id="month"></p>
+    <div id="color"class="bass">
+
+    </div>
+    <button onclick="changecolor()">click here</button>
+    <p id="change" onmousemove="bigger()"> uganda</p>
+    <script>
+        document.getElementById("month").innerHTML = "The world begins"
+        document.getElementById("lion").innerHTML = "this is a lion"
+        function changecolor(){
+            document.getElementById("color").style.backgroundColor= "blue"
+        }
+       function bigger() {
+        document.getElementById("change").style.fontSize="50px"
+        document.getElementById("change").style.color="brown"
+       }
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="clear" style="height: 250px; width: 250px; background-color: brown;"></div>
+    <script>
+        document.getElementById("clear").addEventListener("click", change)
+        document.getElementById("clear").addEventListener("mouseover", pick)
+        function change(){
+            alert("some on clicked my div") 
+        }
+        function pick(){
+            alert("go home")
+        }
+    </script>
+</body>
+</html>

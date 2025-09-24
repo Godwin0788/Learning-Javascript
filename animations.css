@@ -1,0 +1,13 @@
+#container{
+    width: 350px;
+    height: 350px;
+    position: relative;
+    background: green;
+}
+
+#crane{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    background: rgb(189, 189, 241);
+}
